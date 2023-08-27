@@ -14,6 +14,8 @@ public class ClientServiceImpl implements ClientService {
 	@Autowired
 	private ClientRepository cRep;
 	
+	@Override
+	@Transactional(readOnly = true)
 	public List<Client> findAll(){
 		return (List<Client>)cRep.findAll();
 	}

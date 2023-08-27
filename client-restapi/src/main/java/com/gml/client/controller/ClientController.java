@@ -25,9 +25,6 @@ import jakarta.validation.Valid;
 /**
  * Clase controller para la administracion de clientes
  */
-/**
- * 
- */
 @RestController
 @RequestMapping("/api/clients")
 public class ClientController {

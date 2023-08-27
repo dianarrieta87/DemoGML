@@ -95,3 +95,44 @@
 2023-08-27T11:24:27.885-05:00  WARN 3808 --- [RMI TCP Connection(20)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 2023-08-27T11:24:27.935-05:00  INFO 3808 --- [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
 2023-08-27T11:24:27.954-05:00  INFO 3808 --- [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-08-27T12:29:00.890-05:00  INFO 7692 --- [restartedMain] com.gml.client.ClientApplication         : Starting ClientApplication using Java 17.0.7 with PID 7692 (C:\Users\adminDiana\git\DemoGML\client-restapi\target\classes started by adminDiana in C:\Users\adminDiana\git\DemoGML\client-restapi)
+2023-08-27T12:29:00.892-05:00  INFO 7692 --- [restartedMain] com.gml.client.ClientApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-08-27T12:29:00.952-05:00  INFO 7692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-27T12:29:00.952-05:00  INFO 7692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-27T12:29:01.700-05:00  INFO 7692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27T12:29:01.765-05:00  INFO 7692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-08-27T12:29:02.368-05:00  INFO 7692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-27T12:29:02.378-05:00  INFO 7692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-27T12:29:02.379-05:00  INFO 7692 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-08-27T12:29:02.455-05:00  INFO 7692 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-27T12:29:02.456-05:00  INFO 7692 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1503 ms
+2023-08-27T12:29:02.493-05:00  INFO 7692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-27T12:29:02.709-05:00  INFO 7692 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:~/bibliotecaTest user=SA
+2023-08-27T12:29:02.712-05:00  INFO 7692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-27T12:29:02.724-05:00  INFO 7692 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:~/bibliotecaTest'
+2023-08-27T12:29:02.868-05:00  INFO 7692 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27T12:29:02.922-05:00  INFO 7692 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-08-27T12:29:02.925-05:00  INFO 7692 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-27T12:29:03.080-05:00  INFO 7692 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-27T12:29:03.224-05:00  INFO 7692 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-27T12:29:03.460-05:00  INFO 7692 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-27T12:29:04.135-05:00  INFO 7692 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27T12:29:04.175-05:00  INFO 7692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27T12:29:04.502-05:00  WARN 7692 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27T12:29:04.823-05:00  INFO 7692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-27T12:29:04.866-05:00  INFO 7692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-27T12:29:04.880-05:00  INFO 7692 --- [restartedMain] com.gml.client.ClientApplication         : Started ClientApplication in 4.494 seconds (process running for 5.436)
+2023-08-27T12:29:28.060-05:00  INFO 7692 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27T12:29:28.062-05:00  INFO 7692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-27T12:29:28.064-05:00  INFO 7692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-27T12:29:33.369-05:00  INFO 7692 --- [http-nio-8080-exec-3] c.g.client.controller.ClientController   : Client saved successfully: otro3243
+2023-08-27T12:30:16.916-05:00  INFO 7692 --- [http-nio-8080-exec-9] c.g.client.controller.ClientController   : Client saved successfully: otro324
+2023-08-27T12:31:23.652-05:00  INFO 7692 --- [http-nio-8080-exec-7] c.g.client.controller.ClientController   : Client saved successfully: otro32
+2023-08-27T12:31:57.586-05:00  INFO 7692 --- [http-nio-8080-exec-10] c.g.client.controller.ClientController   : Client saved successfully: otro
+2023-08-27T12:32:23.769-05:00  INFO 7692 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-27T12:32:23.798-05:00  INFO 7692 --- [RMI TCP Connection(12)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-27T12:32:23.800-05:00  INFO 7692 --- [RMI TCP Connection(12)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27T12:32:23.812-05:00  INFO 7692 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27T12:32:24.020-05:00  WARN 7692 --- [RMI TCP Connection(12)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-08-27T12:32:24.021-05:00  INFO 7692 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-27T12:32:24.024-05:00  INFO 7692 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

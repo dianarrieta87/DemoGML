@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+h3{
+    color:darkcyan;
+}
+
+.invalid-feedback {
+    color: red;
+    display: none;
+  }
+  
+  .is-invalid {
+    border-color: red;
+  }

@@ -1,0 +1,36 @@
+
+<button class="btn btn-primary" (click)="openFormModal()">New</button>
+<br/><br/>
+<form class="row row-cols-lg-auto g-3 align-items-center">
+  <div class="col-12">
+    <input type="text" class="form-control" [(ngModel)]="searchKey" id="sharedKey" name="sharedKey" placeholder="Enter shared key">
+  </div>
+  <div class="col-12">
+    <button type="button" class="btn btn-primary" (click)="searchClients()">Search</button>
+  </div>
+</form>
+<br/><br/><br/>
+<h3>Clients</h3>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Shared Key</th>
+        <th scope="col">Business ID</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Data added</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody class="table-striped">
+      <tr *ngFor="let client of clients">
+        <td>{{client.sharedKey}}</td>
+        <td>{{client.businessId}}</td>
+        <td>{{client.email}}</td>
+        <td>{{client.phone}}</td>
+        <td>{{client.creationDate | date:"dd/MM/yyyy"}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+</table>

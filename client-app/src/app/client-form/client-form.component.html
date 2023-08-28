@@ -1,0 +1,39 @@
+<div class="modal-header">
+    <h4 class="modal-title">Create new client</h4>
+</div>
+<div class="modal-body">
+    <form #clientForm="ngForm">
+        <div class="form-group row">
+            <label for="sharedKey" class="col-sm-3 col-form-label">Shared Key</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="sharedKey" [(ngModel)]="client.sharedKey" placeholder="Shared Key"  name="sharedKey" #sharedKey="ngModel" required maxlength="20">
+                <div class="invalid-feedback">Shared Key is required</div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="name" class="col-sm-3 col-form-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="name" placeholder="Name" [(ngModel)]="client.businessId" name="businessId" #businessId="ngModel" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="email" class="col-sm-3 col-form-label">Email</label>
+            <div class="col-sm-9">
+                <input type="email" class="form-control" id="email" [(ngModel)]="client.email" placeholder="Email"  name="email" #email="ngModel" required  ngModel email>
+                <div class="alert alert-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
+                    Invalid email
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="phone" class="col-sm-3 col-form-label">Phone</label>
+            <div class="col-sm-9">
+                <input type="tel" class="form-control" id="phone" placeholder="Phone"[(ngModel)]="client.phone" name="phone" #phone="ngModel">
+            </div>
+        </div>
+    </form>
+
+</div>
+<div class="modal-footer">
+    <button type="v" class="btn btn-primary" (click)="saveClient()" [disabled]="!clientForm.form.valid">OK</button>
+</div>
